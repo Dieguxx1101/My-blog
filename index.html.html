@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más allá del termómetro | Juan Diego Torres</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --lava-bg: #4a1103;
+            --lava-glow: #d35400;
+            --text-main: #2d3436;
+            --soft-cream: #fffcf9;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--soft-cream);
+            color: var(--text-main);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
+        }
+        .header-glass {
+            background: linear-gradient(rgba(74, 17, 3, 0.9), rgba(211, 84, 0, 0.8)), url('https://images.unsplash.com/photo-1544093202-3932824e4d58?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+        .timeline-box {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 1px solid #e5e7eb;
+        }
+        .timeline-box::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 10px;
+            width: 9px;
+            height: 9px;
+            background: var(--lava-glow);
+            border-radius: 50%;
+        }
+        .img-container {
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #eee;
+            margin-bottom: 1rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .concept-badge {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- CABECERA -->
+    <header class="header-glass text-white py-32 px-6 shadow-2xl relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-none">Más allá del termómetro: La larga búsqueda del calor</h1>
+            <p class="text-xl md:text-2xl opacity-90 max-w-2xl font-light italic">
+                De los mitos antiguos a la energía que mueve nuestro mundo hoy.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-12 grid grid-cols-1 lg:grid-cols-12 gap-12 pb-24">
+        
+        <!-- CONTENIDO PRINCIPAL -->
+        <article class="lg:col-span-8 bg-white p-8 md:p-16 rounded-sm shadow-xl relative z-20">
+            
+            <!-- PRESENTACIÓN -->
+            <section id="presentacion" class="mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-14 w-14 bg-stone-100 rounded-full flex items-center justify-center text-stone-600 font-bold border border-stone-200">
+                        JT
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg text-stone-800">Juan Diego Torres</p>
+                        <p class="text-xs text-stone-400 uppercase tracking-widest">Ficha 3315763</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Este tema me llamó la atención porque, si se piensa bien, el calor está en casi todo lo que hacemos. Sin embargo, este blog nace de una premisa fundamental: <strong>la física no es solo un conjunto de fórmulas, sino una construcción histórica y cultural</strong>. Me genera mucha curiosidad ver cómo algo que hoy nos parece tan obvio, le tomó a la humanidad siglos de errores y experimentos entenderlo.
+                </p>
+            </section>
+
+            <!-- IMPORTANCIA DE LA HISTORIA -->
+            <section id="historia-importancia" class="mb-16 bg-stone-50 p-8 rounded border border-stone-100">
+                <h2 class="text-2xl font-bold mb-4">¿Por qué estudiar la historia del calor?</h2>
+                <p class="text-gray-600 mb-4">Según los planteamientos de Camelo y Rodríguez (2008), revisar la historia de la física nos permite:</p>
+                <ul class="flex flex-col gap-4 text-sm text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <span class="text-orange-600 font-bold">•</span>
+                        <span>Entender cómo evolucionan las ideas científicas a través del tiempo.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-orange-600 font-bold">•</span>
+                        <span>Demostrar que la ciencia puede equivocarse y, a través de la crítica, mejorar.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-orange-600 font-bold">•</span>
+                        <span>Hace el aprendizaje más interesante al mostrar los retos de los genios del pasado.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- DESARROLLO AMPLIADO -->
+            <section id="desarrollo" class="space-y-12">
+                <h2 class="text-3xl font-bold mb-8">Evolución de los Modelos Teóricos</h2>
+                
+                <div class="space-y-10">
+                    <!-- Flogisto -->
+                    <div class="timeline-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-orange-900">La Teoría del Flogisto</h3>
+                            <span class="concept-badge">Modelo Antiguo</span>
+                        </div>
+                        <p class="text-gray-600 italic mb-3">"Todo lo inflamable contiene un espíritu que se libera al arder."</p>
+                        <p class="text-gray-600">Se creía que los cuerpos tenían una sustancia llamada flogisto que se liberaba durante la combustión. Esta teoría falló porque no explicaba correctamente cambios como el aumento de peso en los metales al oxidarse.</p>
+                    </div>
+
+                    <figure class="my-10">
+                        <div class="img-container">
+                            <img src="Luz Vela.jpg" alt="Imagen de una vela encendida representando la combustión" class="grayscale hover:grayscale-0 transition duration-700">
+                        </div>
+                        <figcaption class="text-center text-xs text-stone-400 mt-3 italic">La combustión fue el primer misterio que la teoría del flogisto intentó explicar.</figcaption>
+                    </figure>
+
+                    <!-- Calórico -->
+                    <div class="timeline-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-orange-900">El Calórico: El fluido invisible</h3>
+                            <span class="concept-badge">Sustancialista</span>
+                        </div>
+                        <p class="text-gray-600">Consideraba al calor como un fluido material sin peso que se desplazaba de los cuerpos calientes a los fríos. Aunque fue una idea errónea, permitió los primeros cálculos sobre calorimetría y expansión.</p>
+                    </div>
+
+                    <figure class="my-10">
+                        <div class="img-container">
+                            <img src="Calor Frio.jpg" alt="Representación histórica del flujo de calórico entre cuerpos">
+                        </div>
+                        <figcaption class="text-center text-xs text-stone-400 mt-3 italic">Representación histórica del calor concebido como un fluido moviéndose entre objetos.</figcaption>
+                    </figure>
+
+                    <!-- EXPERIMENTO DE RUMFORD -->
+                    <div class="bg-stone-50 p-6 border-l-4 border-stone-800 my-8">
+                        <h4 class="font-bold text-stone-900 mb-2">Experimento de Rumford: El punto de quiebre</h4>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Benjamin Thompson (Conde de Rumford) observó que al perforar cañones de bronce, se generaba un calor inagotable mientras hubiera fricción. Concluyó que el calor no podía ser un fluido material, sino el resultado del movimiento (trabajo mecánico).
+                        </p>
+                        <div class="img-container bg-white border border-stone-200">
+                            <img src="conduccion y converccion.jpg" alt="Representación del experimento de perforación de cañones de Rumford">
+                        </div>
+                    </div>
+
+                    <!-- Concepto Moderno -->
+                    <div class="timeline-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-orange-900">Teoría Cinética: Calor como Energía</h3>
+                            <span class="concept-badge">Dinámico</span>
+                        </div>
+                        <p class="text-gray-600">Hoy entendemos que el calor está directamente relacionado con el movimiento de las partículas (energía cinética). A mayor vibración molecular, mayor energía térmica posee el sistema.</p>
+                    </div>
+
+                    <figure class="my-10">
+                        <div class="img-container">
+                            <img src="Moleculas.jpg" alt="Moléculas vibrando representando la energía cinética molecular">
+                        </div>
+                        <figcaption class="text-center text-xs text-stone-400 mt-3 italic">La temperatura como reflejo directo del movimiento microscópico de las partículas.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- CONCEPTOS CLAVE -->
+            <section id="conceptos-tecnicos" class="mt-20">
+                <h2 class="text-2xl font-bold mb-6">Claridad de Conceptos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="p-6 border border-stone-100 bg-stone-50">
+                        <p class="font-bold text-stone-800 mb-2">Calor vs. Temperatura</p>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li><strong>Calor:</strong> Energía en transferencia debido a una diferencia de temperatura.</li>
+                            <li><strong>Temperatura:</strong> Medida de qué tan caliente está un cuerpo (energía cinética media).</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 border border-stone-100 bg-stone-50">
+                        <p class="font-bold text-stone-800 mb-2">Transferencia de Calor</p>
+                        <ul class="text-sm space-y-1 text-gray-600">
+                            <li><strong>Conducción:</strong> Contacto directo entre sólidos.</li>
+                            <li><strong>Convección:</strong> Movimiento de fluidos (líquidos o gases).</li>
+                            <li><strong>Radiación:</strong> A través de ondas electromagnéticas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <figure class="mt-8">
+                    <div class="img-container">
+                        <img src="radiacion.jpg" alt="Esquema comparativo de conducción, convección y radiación">
+                    </div>
+                    <figcaption class="text-center text-xs text-stone-400 mt-3 italic">Mecanismos fundamentales de transferencia de energía térmica.</figcaption>
+                </figure>
+            </section>
+
+            <!-- APLICACIONES VIDA REAL -->
+            <section id="aplicaciones" class="mt-20">
+                <h2 class="text-2xl font-bold mb-6">Aplicaciones en la vida cotidiana</h2>
+                <p class="text-gray-600 text-sm mb-6 uppercase tracking-widest font-semibold">Ejemplos prácticos del dominio térmico:</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-10">
+                    <div class="p-4 bg-white border border-stone-200 text-xs font-bold uppercase tracking-widest text-stone-500 hover:bg-stone-50 transition">Motores Térmicos</div>
+                    <div class="p-4 bg-white border border-stone-200 text-xs font-bold uppercase tracking-widest text-stone-500 hover:bg-stone-50 transition">Refrigeración</div>
+                    <div class="p-4 bg-white border border-stone-200 text-xs font-bold uppercase tracking-widest text-stone-500 hover:bg-stone-50 transition">Energía Solar</div>
+                    <div class="p-4 bg-white border border-stone-200 text-xs font-bold uppercase tracking-widest text-stone-500 hover:bg-stone-50 transition">Industria</div>
+                </div>
+
+                <div class="bg-stone-50 p-8 rounded-lg border border-stone-100 mb-10">
+                    <h3 class="text-lg font-bold mb-4 text-stone-800">El Motor y el Vapor: Transformando Energía</h3>
+                    <p class="text-gray-700 text-sm mb-6">
+                        La máquina de vapor funciona mediante la expansión del vapor de agua a alta presión, lo que empuja un pistón y genera movimiento. Este proceso es la demostración perfecta de cómo el calor (energía térmica) puede convertirse en trabajo mecánico. Los motores modernos, aunque más complejos, siguen este mismo principio dinámico: aprovechar la expansión de gases calientes para mover nuestra civilización.
+                    </p>
+                    <div class="img-container bg-white shadow-inner">
+                        <img src="motor y vapor.jpg" alt="Imagen de un motor a vapor" class="grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <figcaption class="text-center text-xs text-stone-400 mt-3 italic">La aplicación del modelo dinámico permitió la eficiencia y evolución de la máquina de vapor, impulsando la Revolución Industrial.</figcaption>
+                </div>
+            </section>
+
+            <!-- CLASIFICACIÓN DE MODELOS -->
+            <section id="clasificacion-modelos" class="mt-16 bg-stone-900 p-10 text-white rounded">
+                <h3 class="text-xl font-bold mb-6 border-b border-stone-700 pb-2">Clasificación de los Modelos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="font-bold text-lg text-orange-400">Modelo Sustancialista</p>
+                        <p class="text-sm opacity-80 mt-2">Define el calor como una sustancia física. Fue útil para mediciones cuantitativas iniciales pero insuficiente para explicar el origen mecánico del calor.</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg text-orange-400">Modelo Dinámico</p>
+                        <p class="text-sm opacity-80 mt-2">Define el calor como energía en movimiento. Es el pilar fundamental para comprender la conservación de la energía y los procesos modernos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PREGUNTAS PARA PENSAR -->
+            <section id="preguntas-pensar" class="mt-24 border-y border-stone-200 py-12">
+                <h2 class="text-3xl font-bold mb-10 text-center">Preguntas para pensar</h2>
+                
+                <div class="space-y-12">
+                    <div class="max-w-xl mx-auto">
+                        <p class="font-bold text-stone-900 mb-2">¿Podemos decir que un hielo tiene calor?</p>
+                        <p class="text-gray-600 text-sm italic border-l-2 border-orange-400 pl-4">
+                            Desde la física, sí. Mientras sus moléculas tengan algo de movimiento, tiene energía interna. El "frío" como tal es solo la ausencia de calor.
+                        </p>
+                    </div>
+
+                    <div class="max-w-xl mx-auto">
+                        <p class="font-bold text-stone-900 mb-2">¿Cómo influye la historia en lo que aprendemos hoy?</p>
+                        <p class="text-gray-600 text-sm italic border-l-2 border-orange-400 pl-4">
+                            Aprender los errores del pasado nos ayuda a entender que la ciencia siempre está en construcción y que las teorías actuales pueden ser mejoradas mañana.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SÍNTESIS FINAL -->
+            <section id="sintesis" class="mt-20 bg-stone-100 p-12 text-stone-800 border-l-4 border-orange-600">
+                <h2 class="text-3xl font-bold mb-4">Síntesis Final</h2>
+                <p class="text-lg opacity-90">
+                    El calor pasó de ser una sustancia mística a entenderse como una forma de energía en tránsito. Esta evolución nos recuerda que para avanzar, hay que estar dispuestos a cuestionar lo que creemos saber hoy. Gracias a este cambio de paradigma, hoy podemos dominar la energía que impulsa nuestra civilización.
+                </p>
+            </section>
+
+            <!-- REFERENCIAS -->
+            <footer id="referencias" class="mt-20 pt-10 border-t border-stone-200">
+                <h2 class="text-xl font-bold mb-6 text-stone-400 uppercase tracking-widest text-xs">Referencias</h2>
+                <div class="text-sm text-gray-500 space-y-4">
+                    <p class="pl-8 -indent-8">
+                        Camelo Bustos, Francisco Javier; Rodríguez Sotelo, Sindy Julieth (2008). Una revisión histórica del concepto de calor: algunas implicaciones para su aprendizaje. <i>Tecné, Episteme y Didaxis: TED</i>, (23), 67-77. 
+                        <br>
+                        <a href="https://www.redalyc.org/articulo.oa?id=614265307005" target="_blank" class="text-orange-600 hover:underline">https://www.redalyc.org/articulo.oa?id=614265307005</a>
+                    </p>
+                    <p class="pl-8 -indent-8">
+                        Google. (2024). <i>Gemini 2.5 Flash</i> (Modelo de lenguaje). Procesamiento de texto y asistencia técnica en el desarrollo de la estructura web para el proyecto educativo de física.
+                    </p>
+                </div>
+            </footer>
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="lg:col-span-4 space-y-8">
+            <div class="p-8 bg-white border border-stone-100 shadow-sm sticky top-8">
+                <h4 class="font-bold text-stone-900 mb-6 uppercase text-xs tracking-widest border-b pb-2">Navegación</h4>
+                <nav class="flex flex-col space-y-4 text-sm font-medium">
+                    <a href="#presentacion" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline">Sobre el autor</a>
+                    <a href="#historia-importancia" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline">Valor de la Historia</a>
+                    <a href="#desarrollo" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline">Evolución Teórica</a>
+                    <a href="#conceptos-tecnicos" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline">Conceptos Técnicos</a>
+                    <a href="#aplicaciones" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline">Aplicaciones Prácticas</a>
+                    <a href="#clasificacion-modelos" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline">Clasificación de Modelos</a>
+                    <a href="#preguntas-pensar" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline font-semibold">Preguntas para pensar</a>
+                    <a href="#sintesis" class="text-stone-400 hover:text-orange-600 transition underline-offset-4 hover:underline">Conclusión final</a>
+                </nav>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="bg-stone-900 text-stone-500 py-12 text-center text-sm">
+        <p>Juan Diego Torres - Ficha 3315763</p>
+        <p class="mt-1">Blog de Física 2026</p>
+    </footer>
+
+</body>
+</html>
